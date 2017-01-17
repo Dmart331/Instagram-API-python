@@ -1,6 +1,6 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
+from requests_toolbelt import MultipartEncoder
 import requests
 import random
 import json
@@ -18,8 +18,6 @@ if sys.version_info.major == 3:
     import urllib.parse
 
 from ImageUtils import getImageSize
-from requests_toolbelt import MultipartEncoder
-from moviepy.editor import VideoFileClip
 
 class InstagramAPI:
     API_URL = 'https://i.instagram.com/api/v1/'

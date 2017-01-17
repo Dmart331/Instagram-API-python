@@ -3,8 +3,9 @@
 
 from InstagramAPI import InstagramAPI
 
-InstagramAPI = InstagramAPI("login", "password")
-InstagramAPI.login() # login
+InstagramAPI = InstagramAPI("mordecai333", "shitghost2")
+InstagramAPI.login()
+InstagramAPI.uploadPhoto('gal.jpg' , caption = "Galixy andromida", upload_id = None) # login
 InstagramAPI.tagFeed("cat") # get media list by tag #cat
 media_id = InstagramAPI.LastJson # last response JSON
 InstagramAPI.like(media_id["ranked_items"][0]["pk"]) # like first media
